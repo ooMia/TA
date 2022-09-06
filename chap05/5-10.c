@@ -3,12 +3,15 @@
 int main() {
 
 	double x, y;
-	printf("x ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ½Ã¿À: "); scanf_s(" %lf", &x);
-	printf("y ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ½Ã¿À: "); scanf_s(" %lf", &y);
+	printf("x ì¢Œí‘œë¥¼ ìž…ë ¥í•˜ì‹œì˜¤: "); scanf_s(" %lf", &x);
+	printf("y ì¢Œí‘œë¥¼ ìž…ë ¥í•˜ì‹œì˜¤: "); scanf_s(" %lf", &y);
 
+	int result = 
 	(x > 0)
-		? (y > 0 ? printf("1»çºÐ¸é") : printf("4»çºÐ¸é"))
-		: (y > 0 ? printf("2»çºÐ¸é") : printf("3»çºÐ¸é"));
+		? (y > 0 ? 1 : 4)
+		: (y > 0 ? 2 : 3);
+	
+	printf("%dì‚¬ë¶„ë©´", result);
 
 	return 0;
 }
